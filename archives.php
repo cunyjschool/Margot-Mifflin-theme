@@ -19,7 +19,7 @@ Template Name: Archives
 		<?php wp_get_archives('type=monthly'); ?>
 	</ul>
 
-<h2>Archives by Subject:</h2>
+	<h2>Archives by Subject:</h2>
 	<ul>
 		 <?php wp_list_categories(); ?>
 	</ul>

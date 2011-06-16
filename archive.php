@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="home"<?php if(is_page(3)) { ?> id="homeframe"<?php } ?>>
+<div class="home"<?php if(is_page('archive')) { ?> id="homeframe"<?php } ?>>
 <?php get_sidebar(); ?>
 
 

@@ -6,12 +6,12 @@
 
   <div id="content">
 
-<?php if(is_page(3)) { ?><div id="home"><?php } ?>
-<?php if(is_page(7)) { ?><div id="articles"><?php } ?>
-<?php if(is_page(13)) { ?><div id="books"><?php } ?>
-<?php if(is_page(15)) { ?><div id="biography"><?php } ?>
-<?php if(is_page(20)) { ?><div id="news"><?php } ?>
-<?php if(is_page(17)) { ?><div id="contact"><?php } ?>
+<?php if(is_page('home')) { ?><div id="home"><?php } ?>
+<?php if(is_page('articles')) { ?><div id="articles"><?php } ?>
+<?php if(is_page('books')) { ?><div id="books"><?php } ?>
+<?php if(is_page('biography')) { ?><div id="biography"><?php } ?>
+<?php if(is_page('news')) { ?><div id="news"><?php } ?>
+<?php if(is_page('contact')) { ?><div id="contact"><?php } ?>
 
 <?php edit_post_link('Edit this entry.', '<div style="clear: both;">', '</div>'); ?>
 
@@ -27,8 +27,8 @@
 
 <?php if(is_page(3)) { ?>
 <h2 style="margin-top: 40px; margin-bottom: 5px;">Body Politic</h2>
-<span class="subscribe"><a href="http://margotmifflin.com/subscribe/">| Subscribe to blog |</span>
-<?php query_posts('cat=1&showposts=10'); ?>
+<span class="subscribe"><a href="<?php bloginfo('url'); ?>/subscribe/">| Subscribe to blog |</span>
+<?php query_posts('category_name=blog&showposts=10'); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <h3 style="margin-top: 40px;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
   <div class="date">Posted on <?php the_date(); ?></div>
@@ -38,7 +38,7 @@
 		<?php endwhile; ?>
 
 		<div class="navigation">
-<a href="http://margotmifflin.com/category/blog/page/2/">Older Entries &raquo;</a>
+<a href="<?php bloginfo('url'); ?>/category/blog/page/2/">Older Entries &raquo;</a>
 		</div>
 
 	<?php else : ?>

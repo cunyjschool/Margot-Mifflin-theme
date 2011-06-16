@@ -16,7 +16,7 @@ Read the <a href="http://margotmifflin.com/wp-content/uploads/2009/02/prologue-r
 <strong>Body Politic</strong>:
 <ul style="padding-bottom: 40px;">
 
-<?php query_posts('cat=1&showposts=10'); ?>
+<?php query_posts('category_name=blog&showposts=10'); ?>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   					<?php the_content() ?>
