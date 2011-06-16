@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="home" <?php if(is_page(3)) { ?>id="homeframe"<?php } ?>>
+<div class="home" <?php if(is_page('home')) { ?>id="homeframe"<?php } ?>>
 <?php get_sidebar(); ?>
 
 
@@ -25,7 +25,7 @@
 	<?php endwhile; endif; ?>
 
 
-<?php if(is_page(3)) { ?>
+<?php if(is_page('home')) { ?>
 <h2 style="margin-top: 40px; margin-bottom: 5px;">Body Politic</h2>
 <span class="subscribe"><a href="<?php bloginfo('url'); ?>/subscribe/">| Subscribe to blog |</span>
 <?php query_posts('category_name=blog&showposts=10'); ?>
@@ -47,7 +47,16 @@
 <?php } ?>
 
 
-<?php if(is_page(3,7,13,15,17,20)) { ?></div><?php } ?>
+<?php
+$pages = array(
+	'news',
+	'home',
+	'articles',
+	'books',
+	'biography',
+	'contact'
+);
+if(is_page( $pages )) { ?></div><?php } ?>
   </div>
 </div>
 
