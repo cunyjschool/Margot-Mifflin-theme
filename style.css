@@ -1,0 +1,272 @@
+/*
+Theme Name: Margot Mifflin
+Version: 1.0
+Author: Drew Geraets
+Author URI: http://www.runningdesign.com
+*/
+
+html {
+  min-height: 100%;
+  height: auto; }
+
+body {
+  font-size: small;
+  font-family: Verdana, Arial, Sans-Serif;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  line-height: 165%;
+  color: #fff; }
+
+a, a:visited {
+  color: #999;
+  text-decoration: none; }
+
+a:hover {
+  color: #ccc;
+  text-decoration: underline; }
+
+p {
+  padding: .2em 0; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.home {
+  min-height: 640px;
+  width: 1100px; }
+
+#homeframe {
+  background: url(img/photo-frame.jpg) no-repeat -7px 425px; }
+
+#biopic {
+  background: #000 url(img/margot.jpg) no-repeat 540px bottom; }
+
+#sidebar {
+  float: left;
+  width: 500px;
+  padding: 20px; }
+
+#sidebar ul li {
+  display: block;
+  list-style-type: none; }
+
+#sidebar ul li.home-home a {
+  display: block;
+  width: 200px;
+  height: 60px; 
+  background: url(img/home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.home-home a:hover {
+  background-position: -197px 0; }
+
+#sidebar ul li.contact a {
+  display: block;
+  width: 280px;
+  height: 60px; 
+  background: url(img/contact-home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.contact a:hover {
+  background-position: -280px 0; }
+
+#sidebar ul li.books-home a {
+  display: block;
+  width: 480px;
+  height: 60px; 
+  background: url(img/books-home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.books-home a:hover {
+  background-position: -479px 0; }
+
+#sidebar ul li.books a {
+  display: block;
+  width: 480px;
+  height: 60px; 
+  background: url(img/books.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.books a:hover {
+  background-position: -479px 0; }
+
+#sidebar ul li.bio a {
+  display: block;
+  width: 350px;
+  height: 60px; 
+  background: url(img/biography-home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.bio a:hover {
+  background-position: -360px 0; }
+
+#sidebar ul li.blog a {
+  display: block;
+  width: 160px;
+  height: 60px; 
+  background: url(img/blog-home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.blog a:hover {
+  background-position: -173px 0; }
+    
+#sidebar ul li.articles a {
+  display: block;
+  width: 350px;
+  height: 60px; 
+  background: url(img/articles-home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.articles a:hover {
+	background-position: -359px 0; }
+
+#sidebar ul li.news-home a {
+  display: block;
+  width: 440px;
+  height: 60px; 
+  background: url(img/news-home.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.news-home a:hover {
+  background-position: -441px 0; }
+
+#sidebar ul li.news a {
+  display: block;
+  width: 440px;
+  height: 60px; 
+  background: url(img/news.jpg) no-repeat 0 0;
+  text-indent: -9009px; }
+
+#sidebar ul li.news a:hover {
+  background-position: -441px 0; }
+
+#content {
+  float: left;
+  width: 450px; }
+
+#content strong {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #d29b18; }
+
+#content ul {
+  margin-left: 2em; }
+
+#content li {
+  padding: .25em; }
+
+#home {
+  padding-top: 98px; }
+
+#articles {
+  padding-top: 98px; }
+
+#books {
+  padding-top: 98px; }
+
+#biography {
+  padding-top: 98px;
+  height: 100%;
+  min-height: 720px;}
+
+#news {
+  padding-top: 98px; }
+
+#contact {
+  padding-top: 98px; }
+
+#sidebar ul li#current-home a, #sidebar ul li#current-home a:visited {
+  display: block;
+  width: 200px;
+  height: 60px; 
+  background: url(img/home.jpg) no-repeat;
+  background-position: -197px 0;
+  text-indent: -9009px; }
+
+#sidebar ul li#current-articles a, #sidebar ul li#current-articles a:visited {
+  display: block;
+  width: 350px;
+  height: 60px; 
+  background: url(img/articles-home.jpg) no-repeat;
+  text-indent: -9009px;
+  background-position: -359px 0; }
+
+#sidebar ul li#current-books a, #sidebar ul li#current-books a:visited {
+  display: block;
+  width: 480px;
+  height: 60px; 
+  background: url(img/books.jpg) no-repeat 0 0;
+  text-indent: -9009px; 
+  background-position: -479px 0; }
+
+#sidebar ul li#current-bio a, #sidebar ul li#current-bio a:visited {
+  display: block;
+  width: 350px;
+  height: 60px; 
+  background: url(img/biography-home.jpg) no-repeat 0 0;
+  text-indent: -9009px;
+  background-position: -360px 0; }
+
+#sidebar ul li#current-news a, #sidebar ul li#current-news a:visited {
+  display: block;
+  width: 440px;
+  height: 60px; 
+  background: url(img/news.jpg) no-repeat 0 0;
+  text-indent: -9009px; 
+  background-position: -441px 0; }
+
+#sidebar ul li#current-contact a, #sidebar ul li#current-contact a:visited {
+  display: block;
+  width: 280px;
+  height: 60px; 
+  background: url(img/contact-home.jpg) no-repeat 0 0;
+  text-indent: -9009px;
+  background-position: -280px 0; }
+  
+
+#sidebar ul li#current-blog a, #sidebar ul li#current-blog a:visited {
+  display: block;
+  width: 280px;
+  height: 60px; 
+  background: url(img/blog-home.jpg) no-repeat 0 0;
+  text-indent: -9009px;
+  background-position: -173px 0; }
+  
+ .date {
+ 	font-size: 10px;
+	color: #d29b18; 
+	text-transform: uppercase; }
+
+img.alignleft {
+	float: left;
+	margin: 0 20px 20px 0; } 
+
+img.alignright {
+	float: right;
+	margin: 0 0 20px 20px; } 
+
+.navigation {
+  padding: 20px 0; }
+  
+  
+/* ADDED BY ROSALEEN */
+
+h3 { 
+  clear: both; margin-top: 5px;}
+  
+.subscribe {
+  text-align: right; 
+  margin-left: 0px; 
+  font-size: 0.8em; 
+}
+.subscribe a {
+  color: #fe0000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.subscribe a:hover {
+  color: #ccc;
+}
